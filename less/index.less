@@ -1,0 +1,101 @@
+@searchback:#303030;
+@inputback:#4e4e4e;
+@good-item:#f3f3f3;
+@yellow:#ffb900;
+.row{
+  margin: 0;
+}
+a{
+  text-decoration: none!important;
+}
+.home{
+  .search-box{
+    padding: .2rem .2rem;
+    background:@searchback;
+    input{
+      background: @inputback;
+      border: none;
+      color: white;
+      height: .4rem;
+    }
+  }
+  .goods{
+    padding-bottom: .7rem;
+    overflow: hidden;
+    .goods-tab{
+      padding-bottom: .15rem;
+      overflow: scroll;
+      overflow: -webkit-scrollbar-none;
+      white-space: nowrap;
+      width: 100%;
+      background: @searchback;
+      color: #959595;
+      span{
+        text-align: center;
+        display: inline-block;
+        width: 1.5rem;
+        font-size: .2rem;
+
+      }
+
+    }
+    .goods-content{
+      padding: 0 .2rem;
+       .good-item{
+         width: 2.9rem;
+          background:@good-item;
+          margin-top: .1rem;
+          padding: 0;
+         &:nth-last-of-type(even){
+           margin-right: .2rem;
+         }
+          img{
+            width: 2.9rem;
+            height:3rem;
+          }
+          .goods-msg{
+            padding: .15rem;
+            .msg-title{
+              margin: .1rem 0 .15rem 0;
+              font-size: .26rem;
+            }
+            .msg-price{
+              line-height: .19rem;
+              margin: 0;
+              .price-guest{
+                color: red;
+                font-size: .19rem;
+              }
+              .price-member{
+                font-size: .12rem;
+                .member-text{
+                  color: white;
+                  background: @searchback;
+                  padding: .05rem;
+                }
+                .member-price{
+                  color: white;
+                  background: @yellow;
+                  padding: .05rem;
+                }
+              }
+            }
+          }
+        }
+
+    }
+
+  }
+  .tabbar{
+    position: fixed;
+    background: white;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid black;
+    a{
+      display: inline-block;
+      width: 49%;
+      padding: .2rem;
+    }
+  }
+}

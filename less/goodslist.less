@@ -1,0 +1,155 @@
+@searchback:#303030;
+@inputback:#4e4e4e;
+@good-item:#f3f3f3;
+@yellow:#ffb900;//选中type-item边框
+@gayborder:#4c4c4c;//未选中tpyeitem的边框
+@titlecolor:#eaeaea;
+@itemcolor:#aeaeae;
+.row{
+  margin: 0;
+}
+a{
+  text-decoration: none!important;
+}
+.goodslist{
+  //overflow: hidden;
+  .search-box{
+    padding: .2rem .2rem;
+    background:@searchback;
+    input{
+      background: @inputback;
+      border: none;
+      color: white;
+      height: .4rem;
+    }
+  }
+  .goods{
+    padding-bottom: .7rem;
+    overflow: hidden;
+    .goods-tab{
+      padding-bottom: .15rem;
+      white-space: nowrap;
+      width: 100%;
+      background: @searchback;
+      color: #959595;
+      span{
+        text-align: center;
+        display: inline-block;
+        width: 25%;
+        font-size: .2rem;
+
+      }
+
+    }
+    .goods-content{
+      padding: 0 .2rem;
+      .good-item{
+        width: 2.9rem;
+        background:@good-item;
+        margin-top: .1rem;
+        padding: 0;
+        &:nth-last-of-type(even){
+          margin-right: .2rem;
+        }
+        img{
+          width: 2.9rem;
+          height:3rem;
+        }
+        .goods-msg{
+          padding: .15rem;
+          .msg-title{
+            margin: .1rem 0 .15rem 0;
+            font-size: .26rem;
+          }
+          .msg-price{
+            line-height: .19rem;
+            margin: 0;
+            .price-guest{
+              color: red;
+              font-size: .19rem;
+            }
+            .price-member{
+              font-size: .12rem;
+              .member-text{
+                color: white;
+                background: @searchback;
+                padding: .05rem;
+              }
+              .member-price{
+                color: white;
+                background: @yellow;
+                padding: .05rem;
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+  .change{
+    height: 100%;
+    position: absolute;
+    transition: all .5s ease;
+    left:0;
+    width: 100%;
+    top: 0;
+    .transp{
+      width:20% ;
+      height: 100%;
+      background: rgba(0,0,0,0);
+      transition: all 1s ease;
+    }
+    .form{
+      background: @searchback;
+      color: white;
+      height: 100%;
+      width: 80%;
+      form{
+        .title{
+          font-size: .3rem;
+          padding: .15rem;
+          border-bottom: 1px solid black;
+          color: @titlecolor;
+        }
+        .change-term{
+          //筛选标题文字
+          .term-title{
+            font-size: .25rem;
+            color: @titlecolor;
+          }
+          .term-price{
+            padding: .2rem 0;
+            .row{
+              .input{
+                padding: 0;
+                input{
+                  background: @inputback;
+                  color: white;
+                  border: none;
+                }
+              }
+            }
+          }
+          .term-type{
+            padding: .2rem 0;
+            .type-item{
+              border: @gayborder 1px solid;
+              padding: .15rem .43rem;
+              display: inline-block;
+              font-size: .25rem;
+              margin: .1rem .1rem;
+
+            }
+          }
+          .term-brand{
+            padding: .2rem 0;
+          }
+        }
+      }
+
+    }
+
+  }
+}

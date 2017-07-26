@@ -1,0 +1,131 @@
+.row {
+  margin: 0;
+}
+a {
+  text-decoration: none!important;
+}
+.goodslist .search-box {
+  padding: .2rem .2rem;
+  background: #303030;
+}
+.goodslist .search-box input {
+  background: #4e4e4e;
+  border: none;
+  color: white;
+  height: .4rem;
+}
+.goodslist .goods {
+  padding-bottom: .7rem;
+  overflow: hidden;
+}
+.goodslist .goods .goods-tab {
+  padding-bottom: .15rem;
+  white-space: nowrap;
+  width: 100%;
+  background: #303030;
+  color: #959595;
+}
+.goodslist .goods .goods-tab span {
+  text-align: center;
+  display: inline-block;
+  width: 25%;
+  font-size: .2rem;
+}
+.goodslist .goods .goods-content {
+  padding: 0 .2rem;
+}
+.goodslist .goods .goods-content .good-item {
+  width: 2.9rem;
+  background: #f3f3f3;
+  margin-top: .1rem;
+  padding: 0;
+}
+.goodslist .goods .goods-content .good-item:nth-last-of-type(even) {
+  margin-right: .2rem;
+}
+.goodslist .goods .goods-content .good-item img {
+  width: 2.9rem;
+  height: 3rem;
+}
+.goodslist .goods .goods-content .good-item .goods-msg {
+  padding: .15rem;
+}
+.goodslist .goods .goods-content .good-item .goods-msg .msg-title {
+  margin: .1rem 0 .15rem 0;
+  font-size: .26rem;
+}
+.goodslist .goods .goods-content .good-item .goods-msg .msg-price {
+  line-height: .19rem;
+  margin: 0;
+}
+.goodslist .goods .goods-content .good-item .goods-msg .msg-price .price-guest {
+  color: red;
+  font-size: .19rem;
+}
+.goodslist .goods .goods-content .good-item .goods-msg .msg-price .price-member {
+  font-size: .12rem;
+}
+.goodslist .goods .goods-content .good-item .goods-msg .msg-price .price-member .member-text {
+  color: white;
+  background: #303030;
+  padding: .05rem;
+}
+.goodslist .goods .goods-content .good-item .goods-msg .msg-price .price-member .member-price {
+  color: white;
+  background: #ffb900;
+  padding: .05rem;
+}
+.goodslist .change {
+  height: 100%;
+  position: absolute;
+  transition: all .5s ease;
+  left: 0;
+  width: 100%;
+  top: 0;
+}
+.goodslist .change .transp {
+  width: 20% ;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: all 1s ease;
+}
+.goodslist .change .form {
+  background: #303030;
+  color: white;
+  height: 100%;
+  width: 80%;
+}
+.goodslist .change .form form .title {
+  font-size: .3rem;
+  padding: .15rem;
+  border-bottom: 1px solid black;
+  color: #eaeaea;
+}
+.goodslist .change .form form .change-term .term-title {
+  font-size: .25rem;
+  color: #eaeaea;
+}
+.goodslist .change .form form .change-term .term-price {
+  padding: .2rem 0;
+}
+.goodslist .change .form form .change-term .term-price .row .input {
+  padding: 0;
+}
+.goodslist .change .form form .change-term .term-price .row .input input {
+  background: #4e4e4e;
+  color: white;
+  border: none;
+}
+.goodslist .change .form form .change-term .term-type {
+  padding: .2rem 0;
+}
+.goodslist .change .form form .change-term .term-type .type-item {
+  border: #4c4c4c 1px solid;
+  padding: .15rem .43rem;
+  display: inline-block;
+  font-size: .25rem;
+  margin: .1rem .1rem;
+}
+.goodslist .change .form form .change-term .term-brand {
+  padding: .2rem 0;
+}
