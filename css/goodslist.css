@@ -5,21 +5,22 @@ a {
   text-decoration: none!important;
 }
 .goodslist .search-box {
-  padding: .2rem .2rem;
+  padding: .3rem .2rem;
   background: #303030;
 }
 .goodslist .search-box input {
   background: #4e4e4e;
   border: none;
   color: white;
-  height: .4rem;
+  height: .55rem;
+  font-size: .32rem;
 }
 .goodslist .goods {
   padding-bottom: .7rem;
   overflow: hidden;
 }
 .goodslist .goods .goods-tab {
-  padding-bottom: .15rem;
+  padding-bottom: .2rem;
   white-space: nowrap;
   width: 100%;
   background: #303030;
@@ -29,7 +30,7 @@ a {
   text-align: center;
   display: inline-block;
   width: 25%;
-  font-size: .2rem;
+  font-size: .32rem;
 }
 .goodslist .goods .goods-content {
   padding: 0 .2rem;
@@ -121,11 +122,19 @@ a {
 }
 .goodslist .change .form form .change-term .term-type .type-item {
   border: #4c4c4c 1px solid;
-  padding: .15rem .43rem;
+  padding: .15rem .40rem;
   display: inline-block;
   font-size: .25rem;
-  margin: .1rem .1rem;
+  margin: .1rem .05rem;
 }
 .goodslist .change .form form .change-term .term-brand {
   padding: .2rem 0;
+}
+.goodslist .change .form form .change-term .term-brand .brand-item {
+  border: #4c4c4c 1px solid;
+  padding: .15rem .01rem;
+  width: 1rem;
+  font-size: .25rem;
+  margin: .1rem ;
+  display: inline-block;
 }

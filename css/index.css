@@ -5,21 +5,22 @@ a {
   text-decoration: none!important;
 }
 .home .search-box {
-  padding: .2rem .2rem;
+  padding: .3rem .2rem;
   background: #303030;
 }
 .home .search-box input {
   background: #4e4e4e;
   border: none;
   color: white;
-  height: .4rem;
+  height: .55rem;
+  font-size: .32rem;
 }
 .home .goods {
   padding-bottom: .7rem;
   overflow: hidden;
 }
 .home .goods .goods-tab {
-  padding-bottom: .15rem;
+  padding-bottom: .2rem;
   overflow: scroll;
   overflow: -webkit-scrollbar-none;
   white-space: nowrap;
@@ -31,7 +32,7 @@ a {
   text-align: center;
   display: inline-block;
   width: 1.5rem;
-  font-size: .2rem;
+  font-size: .32rem;
 }
 .home .goods .goods-content {
   padding: 0 .2rem;

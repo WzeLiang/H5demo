@@ -1,10 +1,10 @@
-@searchback:#303030;
-@inputback:#4e4e4e;
-@good-item:#f3f3f3;
+@searchback:#303030;//头部背景-筛选背景
+@inputback:#4e4e4e;//输入框背景
+@good-item:#f3f3f3;//商品背景
 @yellow:#ffb900;//选中type-item边框
 @gayborder:#4c4c4c;//未选中tpyeitem的边框
-@titlecolor:#eaeaea;
-@itemcolor:#aeaeae;
+@titlecolor:#eaeaea;//筛选标题颜色
+@itemcolor:#aeaeae;//筛选项颜色
 .row{
   margin: 0;
 }
@@ -14,20 +14,21 @@ a{
 .goodslist{
   //overflow: hidden;
   .search-box{
-    padding: .2rem .2rem;
+    padding: .3rem .2rem;
     background:@searchback;
     input{
       background: @inputback;
       border: none;
       color: white;
-      height: .4rem;
+      height: .55rem;
+      font-size: .32rem;
     }
   }
   .goods{
     padding-bottom: .7rem;
     overflow: hidden;
     .goods-tab{
-      padding-bottom: .15rem;
+      padding-bottom: .2rem;
       white-space: nowrap;
       width: 100%;
       background: @searchback;
@@ -36,7 +37,7 @@ a{
         text-align: center;
         display: inline-block;
         width: 25%;
-        font-size: .2rem;
+        font-size: .32rem;
 
       }
 
@@ -136,15 +137,23 @@ a{
             padding: .2rem 0;
             .type-item{
               border: @gayborder 1px solid;
-              padding: .15rem .43rem;
+              padding: .15rem .40rem;
               display: inline-block;
               font-size: .25rem;
-              margin: .1rem .1rem;
+              margin: .1rem .05rem;
 
             }
           }
           .term-brand{
             padding: .2rem 0;
+            .brand-item{
+              border: @gayborder 1px solid;
+              padding: .15rem .01rem;
+              width: 1rem;
+              font-size:.25rem;
+              margin: .1rem ;
+              display: inline-block;
+            }
           }
         }
       }

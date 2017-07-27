@@ -1,0 +1,71 @@
+@searchback:#303030;//头部背景-筛选背景
+@inputback:#4e4e4e;//输入框背景
+@good-item:#f3f3f3;//商品背景
+@yellow:#ffb900;//选中type-item边框
+@gayborder:#4c4c4c;//未选中tpyeitem的边框
+@titlecolor:#eaeaea;//筛选标题颜色
+@itemcolor:#aeaeae;//筛选项颜色
+.row{
+  margin: 0;
+}
+a{
+  text-decoration: none!important;
+}
+.activity{
+  //overflow: hidden;
+  .search-box{
+    padding: .3rem .2rem;
+    background:@searchback;
+    input{
+      background: @inputback;
+      border: none;
+      color: white;
+      height: .55rem;
+      font-size: .32rem;
+    }
+  }
+  .activity-list{
+    .activity-item{
+      .item-img{
+        position:relative;
+        width: 100%;
+        img{
+          width: 100%;
+        }
+        span{
+          display: inline-block;
+          position: absolute;
+          height: 0;
+          width: 0;
+          left: 3rem;
+          bottom: 0;
+          border-width: .2rem;
+          border-style: dashed dashed solid dashed;
+          border-color: transparent transparent white transparent;
+        }
+      }
+      .item-goodslist{
+        white-space: nowrap;
+        width: 100%;
+        overflow: scroll;
+        padding:.2rem .2rem 0 .2rem;
+        .goods-item{
+          width: 30%;
+          margin: 0 .1rem 0 0;
+          display: inline-block;
+          img{
+            width: 100%;
+          }
+          .goodsname{
+            font-size: .26rem;
+            padding: .1rem 0 0 0;
+            margin: 0;
+          }
+          .goodsprice{
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}
