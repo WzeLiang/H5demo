@@ -9,20 +9,23 @@ a{
   text-decoration: none!important;
 }
 .home{
-  .search-box{
-    padding: .3rem .2rem;
-    background:@searchback;
-    input{
-      background: @inputback;
-      border: none;
-      color: white;
-      height: .55rem;
-      font-size: .32rem;
-    }
-  }
-  .goods{
-    padding-bottom: .7rem;
+  .head{
     overflow: hidden;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    .search-box{
+      padding: .3rem .2rem;
+      background:@searchback;
+      input{
+        background: @inputback;
+        border: none;
+        color: white;
+        height: .55rem;
+        font-size: .32rem;
+      }
+    }
     .goods-tab{
       padding-bottom: .2rem;
       overflow: scroll;
@@ -40,50 +43,54 @@ a{
       }
 
     }
-    .goods-content{
-      padding: 0 .2rem;
-       .good-item{
-         width: 2.9rem;
-          background:@good-item;
-          margin-top: .1rem;
-          padding: 0;
-         &:nth-last-of-type(even){
-           margin-right: .2rem;
-         }
-          img{
-            width: 2.9rem;
-            height:3rem;
+
+  }
+  .goods-content{
+    margin: 1.8rem 0 1.5rem 0;
+    padding: 0 .2rem;
+    .good-item{
+      width: 2.9rem;
+      background:@good-item;
+      margin-top: .1rem;
+      padding: 0;
+      &:nth-child(odd){
+        margin-right: .2rem;
+      }
+      a{
+        display: block;
+        img{
+          width: 2.9rem;
+          height:3rem;
+        }
+        .goods-msg{
+          padding: .15rem;
+          .msg-title{
+            margin: .1rem 0 .15rem 0;
+            font-size: .26rem;
           }
-          .goods-msg{
-            padding: .15rem;
-            .msg-title{
-              margin: .1rem 0 .15rem 0;
-              font-size: .26rem;
+          .msg-price{
+            line-height: .19rem;
+            margin: 0;
+            .price-guest{
+              color: red;
+              font-size: .19rem;
             }
-            .msg-price{
-              line-height: .19rem;
-              margin: 0;
-              .price-guest{
-                color: red;
-                font-size: .19rem;
+            .price-member{
+              font-size: .12rem;
+              .member-text{
+                color: white;
+                background: @searchback;
+                padding: .05rem;
               }
-              .price-member{
-                font-size: .12rem;
-                .member-text{
-                  color: white;
-                  background: @searchback;
-                  padding: .05rem;
-                }
-                .member-price{
-                  color: white;
-                  background: @yellow;
-                  padding: .05rem;
-                }
+              .member-price{
+                color: white;
+                background: @yellow;
+                padding: .05rem;
               }
             }
           }
         }
-
+      }
     }
 
   }
@@ -96,7 +103,15 @@ a{
     a{
       display: inline-block;
       width: 49%;
-      padding: .2rem;
+      padding: .2rem .2rem 0 .2rem;
+      img{
+        width: .45rem;
+      }
+      p{
+        margin: 0;
+        color: black;
+      }
+
     }
   }
 }

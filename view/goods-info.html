@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="../js/config.js"></script>
+    <script src="../src/jquery.min.js"></script>
+    <script src="../src/swiper.min.js"></script>
+    <link rel="stylesheet" href="../src/swiper.min.css">
+    <link rel="stylesheet" href="../src/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/goods-info.css">
+    <title>商品详情</title>
+</head>
+<body class="goods-info">
+    <div class="swiper-container swiper1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../images/goods-tab.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/goods-tab2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/goods-tab3.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="swiper-pagination swiper-pagination-bullets"></div>
+    </div>
+    <div class="goods-msg">
+        <div class="msg-title">ECHO男士健步高尔夫系列</div>
+        <div class="msg-price row">
+            <div class="pull-left price-guest">￥17777</div>
+            <div class="pull-right price-member">会员:<span>￥1777</span></div>
+        </div>
+        <div class="msg-time">
+            距离结束仅剩2小时17分20秒
+        </div>
+        <hr>
+       <div class="msg-cheap">
+           <p class="cheap-title">优惠</p>
+           <p class="cheap-content"><span>限时</span>新品上架，第二件半价</p>
+       </div>
+    </div>
+
+    <div class="buy text-center" id="buy">
+        立即购买
+    </div>
+
+    <script>
+        var swiper1 = new Swiper('.swiper1', {
+            pagination: '.swiper-pagination1',
+            paginationClickable: true,
+            spaceBetween: 30,
+        });
+    </script>
+</body>
+</html>

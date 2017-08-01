@@ -1,0 +1,70 @@
+.row {
+  margin: 0;
+}
+a {
+  text-decoration: none!important;
+}
+.activity-info .info-head .head-img {
+  width: 100%;
+}
+.activity-info .info-head .head-img img {
+  width: 100%;
+}
+.activity-info .info-head .head-msg {
+  padding: .2rem .2rem;
+}
+.activity-info .info-head .head-msg .msg-price {
+  color: white;
+  font-size: .25rem;
+  padding: .12rem .2rem .12rem .35rem;
+  background: url("../images/activity-infoback.png") no-repeat;
+  background-size: 100% 100%;
+}
+.activity-info .info-head .head-msg .msg-content {
+  font-size: .25rem;
+  text-indent: .35rem;
+}
+.activity-info .acitvity-goodslist {
+  padding: 0 .2rem .5rem;
+}
+.activity-info .acitvity-goodslist .row .good-item {
+  width: 2.9rem;
+  background: #f3f3f3;
+  margin-top: .1rem;
+  padding: 0;
+}
+.activity-info .acitvity-goodslist .row .good-item:nth-last-of-type(even) {
+  margin-right: .2rem;
+}
+.activity-info .acitvity-goodslist .row .good-item img {
+  width: 2.9rem;
+  height: 3rem;
+}
+.activity-info .acitvity-goodslist .row .good-item .goods-msg {
+  padding: .15rem;
+}
+.activity-info .acitvity-goodslist .row .good-item .goods-msg .msg-title {
+  margin: .1rem 0 .15rem 0;
+  font-size: .26rem;
+}
+.activity-info .acitvity-goodslist .row .good-item .goods-msg .msg-price {
+  line-height: .19rem;
+  margin: 0;
+}
+.activity-info .acitvity-goodslist .row .good-item .goods-msg .msg-price .price-guest {
+  color: red;
+  font-size: .19rem;
+}
+.activity-info .acitvity-goodslist .row .good-item .goods-msg .msg-price .price-member {
+  font-size: .12rem;
+}
+.activity-info .acitvity-goodslist .row .good-item .goods-msg .msg-price .price-member .member-text {
+  color: white;
+  background: #303030;
+  padding: .05rem;
+}
+.activity-info .acitvity-goodslist .row .good-item .goods-msg .msg-price .price-member .member-price {
+  color: white;
+  background: #ffb900;
+  padding: .05rem;
+}

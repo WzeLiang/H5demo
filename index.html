@@ -1,22 +1,25 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Title</title>
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="src/jquery.min.js"></script>
     <script src="js/config.js"></script>
+    <script src="src/dropload.js"></script>
     <link rel="stylesheet" href="src/bootstrap.min.css">
+    <link rel="stylesheet" href="src/dropload.css">
     <link rel="stylesheet" href="css/index.css">
-    <title>普利荟</title>
 </head>
-<body class="home">
-    <div class="search-box">
-        <form class="text-center">
-            <input class="form-control" type="text" placeholder="你想要的装备都在这里">
-        </form>
-    </div>
-    <div class="goods">
+<body class="home" >
+    <div class="head">
+        <div class="search-box">
+            <form class="text-center">
+                <input class="form-control" type="text" placeholder="你想要的装备都在这里">
+            </form>
+        </div>
         <div class="goods-tab">
             <span>推荐</span>
             <span>服饰</span>
@@ -27,70 +30,90 @@
             <span>鞋袜</span>
             <span>球包</span>
         </div>
-        <div class="goods-content">
-            <div class="row">
-                <div class="col-xs-6 col-sm-6 good-item">
-                    <img src="images/goods-item.png" alt="" class="img-responsive">
-                    <div class="goods-msg">
-                        <p class="msg-title">Titleist金属杆系列</p>
-                        <div class="row msg-price" >
-                            <div class="pull-left price-guest">￥17763</div>
-                            <div class="pull-right price-member">
-                                <span class="member-text">会员</span>
-                                <span class="member-price">￥1777</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-6 good-item">
-                    <img src="images/goods-item2.png" alt="" class="img-responsive">
-                    <div class="goods-msg">
-                            <p class="msg-title">Titleist金属杆系列</p>
-                            <div class="row msg-price" >
-                                <div class="pull-left price-guest">￥17763</div>
-                                <div class="pull-right price-member">
-                                    <span class="member-text">会员</span>
-                                    <span class="member-price">￥1777</span>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-6 col-sm-6 good-item">
-                    <img src="images/goods-item3.png" alt="" class="img-responsive">
-                    <div class="goods-msg">
-                        <p class="msg-title">Titleist金属杆系列</p>
-                        <div class="row msg-price" >
-                            <div class="pull-left price-guest">￥17763</div>
-                            <div class="pull-right price-member">
-                                <span class="member-text">会员</span>
-                                <span class="member-price">￥1777</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-6 col-sm-6 good-item">
-                    <img src="images/goods-item4.jpg" alt="" class="img-responsive">
-                    <div class="goods-msg">
-                        <p class="msg-title">Titleist金属杆系列</p>
-                        <div class="row msg-price" >
-                            <div class="pull-left price-guest">￥17763</div>
-                            <div class="pull-right price-member">
-                                <span class="member-text">会员</span>
-                                <span class="member-price">￥1777</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
     </div>
+    <div class="goods-content content">
+        <div class="lists row"></div>
+    </div>
+    <script>
+        $(function(){
+            var counter = 0;
+            // 每页展示4个
+            var num = 4;
+            var pageStart = 0,pageEnd = 0;
+
+            // dropload
+            $('.content').dropload({
+                scrollArea : window,
+                loadDownFn : function(me){
+                    $.ajax({
+                        type: 'GET',
+                        url: 'json/data.json',
+                        dataType: 'json',
+                        success: function(data){
+                            var result = '';
+                            counter++;
+                            pageEnd = num * counter;
+                            pageStart = pageEnd - num;
+                            console.log(counter)
+                            for(var i = pageStart; i < pageEnd; i++){
+                                result +=  '<div class="item col-xs-6 col-sm-6 good-item">'
+                                    +'<a class="item opacity" href="'+data.lists[i].link+'">'
+                                    +'<img src="'+data.lists[i].img+'" alt="">'
+                                    +'<div class="goods-msg" >'
+                                    +'<p class="msg-title">'+data.lists[i].title+'</p>'
+                                    +'<div class="row msg-price">'
+                                    +'<div class="pull-left price-guest">'+data.lists[i].guestprice+'</div>'
+                                    +'<div class="pull-right price-member">'
+                                    +'<span class="member-text">会员</span>'
+                                    +'<span class="member-price">'+data.lists[i].memberprice+'</span>'
+                                    + '</div>'
+                                    +'</div>'
+                                    +'</div>'
+                                    +'</a>'
+                                    +'</div>';
+                                if((i + 1) >= data.lists.length){
+                                    // 锁定
+                                    me.lock();
+                                    // 无数据
+
+                                    me.noData();
+                                    break;
+                                }
+
+                            }
+                            // 为了测试，延迟1秒加载
+                            setTimeout(function(){
+                                $('.lists').append(result);
+                                // 每次数据加载完，必须重置
+                                me.resetload();
+                            },1000);
+                        },
+                        error: function(xhr, type){
+                            alert('Ajax error!');
+                            // 即使加载出错，也得重置
+                            me.resetload();
+                        }
+                    });
+                }
+            });
+        });
+    </script>
     <div class="tabbar text-center">
-          <a href="view/goodslist.html" class="home">首页</a>
-        <a href="view/activity.html" class="activity">活动</a>
+        <a href="view/goodslist.html" class="home-tab">
+            <img src="images/home-on.png" alt="">
+            <p>首页</p>
+        </a>
+        <a href="view/activity.html" class="activity-tab">
+            <img src="images/act-off.png" alt="">
+            <p>活动</p>
+        </a>
     </div>
+    <script>
+        $(function () {
+            $(".home-tab").click(function () {
+                $(this).find("img").attr("src","images/home-off.png")
+            })
+        })
+    </script>
 </body>
 </html>

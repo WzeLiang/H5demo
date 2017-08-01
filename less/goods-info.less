@@ -1,0 +1,82 @@
+@searchback:#303030;//头部背景-筛选背景/商品倒计时背景
+@inputback:#4e4e4e;//输入框背景
+@good-item:#f3f3f3;//商品背景
+@yellow:#ffb900;//选中type-item边框
+@gayborder:#4c4c4c;//未选中tpyeitem的边框
+@titlecolor:#eaeaea;//筛选标题颜色
+@itemcolor:#aeaeae;//筛选项颜色
+.row{
+  margin: 0;
+}
+a{
+  text-decoration: none!important;
+}
+.goods-info{
+  background: #f6f6f6;
+  .swiper1{
+    .swiper-wrapper{
+      .swiper-slide{
+        width: 6.5rem!important;
+        border: solid 1px red;
+        margin: 0!important;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .goods-msg{
+    padding: .2rem .2rem;
+    background: white;
+    margin: .15rem .2rem 1.2rem .2rem ;
+    .msg-title{
+      font-size: .3rem;
+      font-weight: bold;
+    }
+    .msg-price{
+      margin: .2rem 0 .15rem 0;
+      .price-guest{
+        font-size: .3rem;
+        color: red;
+      }
+      .price-member{
+        font-size: .25rem;
+      }
+    }
+    .msg-time{
+      background:@searchback;
+      color: white;
+      padding: .15rem;
+      font-size: .25rem;
+    }
+    hr{
+      margin-top: .2rem;
+      margin-bottom: .2rem;
+    }
+    .msg-cheap{
+      .cheap-title{
+        color: #b3b3b3;
+      }
+      .cheap-content{
+        font-size: .25rem;
+        span{
+          display: inline-block;
+          padding: .05rem .1rem;
+          background: #ff2c46;
+          color: white;
+          margin-right: .3rem;
+        }
+      }
+    }
+  }
+  .buy{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: .3rem;
+    background: #ffb901;
+    color: white;
+    padding: .3rem 0;
+
+  }
+}

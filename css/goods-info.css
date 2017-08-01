@@ -1,0 +1,68 @@
+.row {
+  margin: 0;
+}
+a {
+  text-decoration: none!important;
+}
+.goods-info {
+  background: #f6f6f6;
+}
+.goods-info .swiper1 .swiper-wrapper .swiper-slide {
+  width: 6.5rem!important;
+  border: solid 1px red;
+  margin: 0!important;
+}
+.goods-info .swiper1 .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+.goods-info .goods-msg {
+  padding: .2rem .2rem;
+  background: white;
+  margin: .15rem .2rem 1.2rem .2rem ;
+}
+.goods-info .goods-msg .msg-title {
+  font-size: .3rem;
+  font-weight: bold;
+}
+.goods-info .goods-msg .msg-price {
+  margin: .2rem 0 .15rem 0;
+}
+.goods-info .goods-msg .msg-price .price-guest {
+  font-size: .3rem;
+  color: red;
+}
+.goods-info .goods-msg .msg-price .price-member {
+  font-size: .25rem;
+}
+.goods-info .goods-msg .msg-time {
+  background: #303030;
+  color: white;
+  padding: .15rem;
+  font-size: .25rem;
+}
+.goods-info .goods-msg hr {
+  margin-top: .2rem;
+  margin-bottom: .2rem;
+}
+.goods-info .goods-msg .msg-cheap .cheap-title {
+  color: #b3b3b3;
+}
+.goods-info .goods-msg .msg-cheap .cheap-content {
+  font-size: .25rem;
+}
+.goods-info .goods-msg .msg-cheap .cheap-content span {
+  display: inline-block;
+  padding: .05rem .1rem;
+  background: #ff2c46;
+  color: white;
+  margin-right: .3rem;
+}
+.goods-info .buy {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: .3rem;
+  background: #ffb901;
+  color: white;
+  padding: .3rem 0;
+}

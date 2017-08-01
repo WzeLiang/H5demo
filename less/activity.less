@@ -16,6 +16,10 @@ a{
   .search-box{
     padding: .3rem .2rem;
     background:@searchback;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
     input{
       background: @inputback;
       border: none;
@@ -25,24 +29,28 @@ a{
     }
   }
   .activity-list{
+    margin-top:1.2rem;
     .activity-item{
       .item-img{
         position:relative;
         width: 100%;
-        img{
-          width: 100%;
-        }
-        span{
-          display: inline-block;
-          position: absolute;
-          height: 0;
-          width: 0;
-          left: 3rem;
-          bottom: 0;
-          border-width: .2rem;
-          border-style: dashed dashed solid dashed;
-          border-color: transparent transparent white transparent;
-        }
+       a{
+         display: block;
+         img{
+           width: 100%;
+         }
+         span{
+           display: inline-block;
+           position: absolute;
+           height: 0;
+           width: 0;
+           left: 3rem;
+           bottom: 0;
+           border-width: .2rem;
+           border-style: dashed dashed solid dashed;
+           border-color: transparent transparent white transparent;
+         }
+       }
       }
       .item-goodslist{
         white-space: nowrap;
@@ -55,6 +63,11 @@ a{
           display: inline-block;
           img{
             width: 100%;
+          }
+          .more{
+            background:#F2F2F2;
+            width:100%;
+            height: 105px;
           }
           .goodsname{
             font-size: .26rem;

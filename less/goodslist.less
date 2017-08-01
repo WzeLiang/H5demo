@@ -13,20 +13,22 @@ a{
 }
 .goodslist{
   //overflow: hidden;
-  .search-box{
-    padding: .3rem .2rem;
-    background:@searchback;
-    input{
-      background: @inputback;
-      border: none;
-      color: white;
-      height: .55rem;
-      font-size: .32rem;
+  .head{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    .search-box{
+      padding: .3rem .2rem;
+      background:@searchback;
+      input{
+        background: @inputback;
+        border: none;
+        color: white;
+        height: .55rem;
+        font-size: .32rem;
+      }
     }
-  }
-  .goods{
-    padding-bottom: .7rem;
-    overflow: hidden;
     .goods-tab{
       padding-bottom: .2rem;
       white-space: nowrap;
@@ -42,6 +44,10 @@ a{
       }
 
     }
+
+  }
+  .goods{
+    margin: 1.8rem 0 1rem 0;
     .goods-content{
       padding: 0 .2rem;
       .good-item{
@@ -90,11 +96,13 @@ a{
 
   }
   .change{
+
     height: 100%;
     position: absolute;
     transition: all .5s ease;
-    left:0;
+     left:100%;
     width: 100%;
+    z-index: 199;
     top: 0;
     .transp{
       width:20% ;
@@ -103,6 +111,7 @@ a{
       transition: all 1s ease;
     }
     .form{
+      position: relative;
       background: @searchback;
       color: white;
       height: 100%;
@@ -149,11 +158,20 @@ a{
             .brand-item{
               border: @gayborder 1px solid;
               padding: .15rem .01rem;
-              width: 1rem;
+              width: 1.5rem;
               font-size:.25rem;
               margin: .1rem ;
               display: inline-block;
             }
+          }
+        }
+        .change-btn{
+          position: absolute;
+          width: 100%;
+          bottom: 0;
+          left: 0;
+          button{
+            width: 49%;
           }
         }
       }

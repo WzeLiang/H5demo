@@ -4,22 +4,25 @@
 a {
   text-decoration: none!important;
 }
-.home .search-box {
+.home .head {
+  overflow: hidden;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+}
+.home .head .search-box {
   padding: .3rem .2rem;
   background: #303030;
 }
-.home .search-box input {
+.home .head .search-box input {
   background: #4e4e4e;
   border: none;
   color: white;
   height: .55rem;
   font-size: .32rem;
 }
-.home .goods {
-  padding-bottom: .7rem;
-  overflow: hidden;
-}
-.home .goods .goods-tab {
+.home .head .goods-tab {
   padding-bottom: .2rem;
   overflow: scroll;
   overflow: -webkit-scrollbar-none;
@@ -28,52 +31,56 @@ a {
   background: #303030;
   color: #959595;
 }
-.home .goods .goods-tab span {
+.home .head .goods-tab span {
   text-align: center;
   display: inline-block;
   width: 1.5rem;
   font-size: .32rem;
 }
-.home .goods .goods-content {
+.home .goods-content {
+  margin: 1.8rem 0 1.5rem 0;
   padding: 0 .2rem;
 }
-.home .goods .goods-content .good-item {
+.home .goods-content .good-item {
   width: 2.9rem;
   background: #f3f3f3;
   margin-top: .1rem;
   padding: 0;
 }
-.home .goods .goods-content .good-item:nth-last-of-type(even) {
+.home .goods-content .good-item:nth-child(odd) {
   margin-right: .2rem;
 }
-.home .goods .goods-content .good-item img {
+.home .goods-content .good-item a {
+  display: block;
+}
+.home .goods-content .good-item a img {
   width: 2.9rem;
   height: 3rem;
 }
-.home .goods .goods-content .good-item .goods-msg {
+.home .goods-content .good-item a .goods-msg {
   padding: .15rem;
 }
-.home .goods .goods-content .good-item .goods-msg .msg-title {
+.home .goods-content .good-item a .goods-msg .msg-title {
   margin: .1rem 0 .15rem 0;
   font-size: .26rem;
 }
-.home .goods .goods-content .good-item .goods-msg .msg-price {
+.home .goods-content .good-item a .goods-msg .msg-price {
   line-height: .19rem;
   margin: 0;
 }
-.home .goods .goods-content .good-item .goods-msg .msg-price .price-guest {
+.home .goods-content .good-item a .goods-msg .msg-price .price-guest {
   color: red;
   font-size: .19rem;
 }
-.home .goods .goods-content .good-item .goods-msg .msg-price .price-member {
+.home .goods-content .good-item a .goods-msg .msg-price .price-member {
   font-size: .12rem;
 }
-.home .goods .goods-content .good-item .goods-msg .msg-price .price-member .member-text {
+.home .goods-content .good-item a .goods-msg .msg-price .price-member .member-text {
   color: white;
   background: #303030;
   padding: .05rem;
 }
-.home .goods .goods-content .good-item .goods-msg .msg-price .price-member .member-price {
+.home .goods-content .good-item a .goods-msg .msg-price .price-member .member-price {
   color: white;
   background: #ffb900;
   padding: .05rem;
@@ -88,5 +95,12 @@ a {
 .home .tabbar a {
   display: inline-block;
   width: 49%;
-  padding: .2rem;
+  padding: .2rem .2rem 0 .2rem;
+}
+.home .tabbar a img {
+  width: .45rem;
+}
+.home .tabbar a p {
+  margin: 0;
+  color: black;
 }

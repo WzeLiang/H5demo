@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+</head>
+<body>
+    <p id="p1">read</p>
+    <p id="p2">阅读</p>
+    <button onclick="testClick()">方法1</button>
+    <p id="p3">test</p>
+    <p id="p4">测试</p>
+    <button onclick="test()">方法2</button>
+    <script>
+
+            function testClick()
+            {
+                var str1=document.getElementById("p1").innerHTML;
+                var str2=document.getElementById("p2").innerHTML;
+                console.log(str1);
+                //  "objc://"为自定义协议头;
+                //  str1&str2为要传给OC的值,以":/"作为分隔
+                window.location.href="objc://"+":/"+str1+":/"+str2;
+            }
+
+            function test()
+            {
+                var str3=document.getElementById("p3").innerHTML;
+                var str4=document.getElementById("p4").innerHTML;
+
+                try{
+                  pl.toDetail(str3);
+                }catch(e){
+                }
+               passValue(str3,str4);
+
+            }
+    </script>
+</body>
+</html>

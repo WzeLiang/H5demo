@@ -7,6 +7,10 @@ a {
 .activity .search-box {
   padding: .3rem .2rem;
   background: #303030;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0;
 }
 .activity .search-box input {
   background: #4e4e4e;
@@ -15,14 +19,20 @@ a {
   height: .55rem;
   font-size: .32rem;
 }
+.activity .activity-list {
+  margin-top: 1.2rem;
+}
 .activity .activity-list .activity-item .item-img {
   position: relative;
   width: 100%;
 }
-.activity .activity-list .activity-item .item-img img {
+.activity .activity-list .activity-item .item-img a {
+  display: block;
+}
+.activity .activity-list .activity-item .item-img a img {
   width: 100%;
 }
-.activity .activity-list .activity-item .item-img span {
+.activity .activity-list .activity-item .item-img a span {
   display: inline-block;
   position: absolute;
   height: 0;
@@ -46,6 +56,11 @@ a {
 }
 .activity .activity-list .activity-item .item-goodslist .goods-item img {
   width: 100%;
+}
+.activity .activity-list .activity-item .item-goodslist .goods-item .more {
+  background: #F2F2F2;
+  width: 100%;
+  height: 105px;
 }
 .activity .activity-list .activity-item .item-goodslist .goods-item .goodsname {
   font-size: .26rem;
