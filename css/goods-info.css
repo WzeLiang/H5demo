@@ -18,7 +18,7 @@ a {
 .goods-info .goods-msg {
   padding: .2rem .2rem;
   background: white;
-  margin: .15rem .2rem 1.2rem .2rem ;
+  margin: .15rem .2rem 0 .2rem ;
 }
 .goods-info .goods-msg .msg-title {
   font-size: .3rem;
@@ -56,6 +56,12 @@ a {
   background: #ff2c46;
   color: white;
   margin-right: .3rem;
+}
+.goods-info .more {
+  margin-bottom: 1.2rem;
+  padding: .3rem 0 .2rem 0;
+  color: #888888;
+  font-size: .2rem;
 }
 .goods-info .buy {
   position: fixed;

@@ -6,10 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="../js/config.js"></script>
-    <script src="../src/jquery.min.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../src/swiper.min.js"></script>
     <link rel="stylesheet" href="../src/swiper.min.css">
-    <link rel="stylesheet" href="../src/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/goods-info.css">
     <title>商品详情</title>
 </head>
@@ -44,17 +44,33 @@
            <p class="cheap-content"><span>限时</span>新品上架，第二件半价</p>
        </div>
     </div>
-
+    <div class="more text-center">
+        继续拖动，查看图文详情
+    </div>
     <div class="buy text-center" id="buy">
         立即购买
     </div>
-
     <script>
         var swiper1 = new Swiper('.swiper1', {
             pagination: '.swiper-pagination1',
             paginationClickable: true,
             spaceBetween: 30,
         });
+    </script>
+
+    <script>
+        $(function () {
+            var aaa=$(".more").offset().top;//元素到文档距离
+            var buyhei=$("#buy").outerHeight(true);//购买按钮高度
+            var morehei=$(".more").outerHeight(true);//继续拖动高度
+            var windowhei =($(window).height());//窗口高度
+            $(window).scroll(function () {
+                var docscrol =$(document).scrollTop();//滚上去的高度
+                if(docscrol>52){
+                    alert("aa")
+                }
+            })
+        })
     </script>
 </body>
 </html>
