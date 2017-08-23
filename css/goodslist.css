@@ -86,7 +86,7 @@ a {
 }
 .goodslist .change {
   height: 100%;
-  position: absolute;
+  position: fixed;
   transition: all .5s ease;
   left: 100%;
   width: 100%;
