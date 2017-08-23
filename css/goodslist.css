@@ -5,7 +5,7 @@ a {
   text-decoration: none!important;
 }
 .goodslist {
-  position: relative;
+  -webkit-overflow-x:hidden;
   overflow-x: hidden;
 }
 .goodslist .head {
