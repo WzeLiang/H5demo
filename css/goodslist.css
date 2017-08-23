@@ -4,6 +4,9 @@
 a {
   text-decoration: none!important;
 }
+.goodslist {
+  overflow-x: hidden;
+}
 .goodslist .head {
   position: fixed;
   width: 100%;
@@ -150,7 +153,20 @@ a {
   width: 100%;
   bottom: 0;
   left: 0;
+  font-size: .3rem;
 }
 .goodslist .change .form form .change-btn button {
-  width: 49%;
+  width: 50%;
+  outline: none;
+  border: none;
+}
+.goodslist .change .form form .change-btn .btn-reast {
+  background: white;
+  padding: .2rem 0;
+  color: black;
+}
+.goodslist .change .form form .change-btn .btn-finish {
+  background: #ffb900;
+  color: white;
+  padding: .2rem 0;
 }
