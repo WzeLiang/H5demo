@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58c7edd1-e7f0-4390-854a-1068b0fefca2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/goodslist.html" afterPath="$PROJECT_DIR$/view/goodslist.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/goodslist.css" afterPath="$PROJECT_DIR$/css/goodslist.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -57,8 +56,8 @@
       <file leaf-file-name="goodslist.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/goodslist.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="101" column="1" lean-forward="true" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
+            <state relative-caret-position="406">
+              <caret line="93" column="12" lean-forward="false" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -84,6 +83,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>fix</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -97,8 +101,8 @@
         <option value="$PROJECT_DIR$/view/activity.html" />
         <option value="$PROJECT_DIR$/view/activity-info.html" />
         <option value="$PROJECT_DIR$/view/goods-info.html" />
-        <option value="$PROJECT_DIR$/css/goodslist.css" />
         <option value="$PROJECT_DIR$/view/goodslist.html" />
+        <option value="$PROJECT_DIR$/css/goodslist.css" />
       </list>
     </option>
   </component>
@@ -267,12 +271,12 @@
       <workItem from="1501034491037" duration="21964000" />
       <workItem from="1501086311806" duration="2000" />
       <workItem from="1501614720995" duration="162000" />
-      <workItem from="1503480237584" duration="1851000" />
+      <workItem from="1503480237584" duration="2761000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23979000" />
+    <option name="totallyTimeSpent" value="24889000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
@@ -491,8 +495,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/goodslist.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="101" column="1" lean-forward="true" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
+        <state relative-caret-position="406">
+          <caret line="93" column="12" lean-forward="false" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="12" />
           <folding />
         </state>
       </provider>
