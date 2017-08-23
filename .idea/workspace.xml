@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58c7edd1-e7f0-4390-854a-1068b0fefca2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/goodslist.html" afterPath="$PROJECT_DIR$/view/goodslist.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -33,22 +34,32 @@
       <file leaf-file-name="activity-info.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/activity-info.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+            <state relative-caret-position="234">
+              <caret line="9" column="59" lean-forward="true" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="goodslist.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="goodslist.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/goodslist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="50" column="69" lean-forward="true" selection-start-line="50" selection-start-column="69" selection-end-line="50" selection-end-column="69" />
+            <state relative-caret-position="524">
+              <caret line="174" column="70" lean-forward="true" selection-start-line="174" selection-start-column="70" selection-end-line="174" selection-end-column="70" />
               <folding>
                 <element signature="n#div#0;n#div#1;n#form#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#div#1;n#form#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="goodslist.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/goodslist.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="598">
+              <caret line="101" column="1" lean-forward="true" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,6 +97,7 @@
         <option value="$PROJECT_DIR$/view/activity.html" />
         <option value="$PROJECT_DIR$/view/activity-info.html" />
         <option value="$PROJECT_DIR$/view/goods-info.html" />
+        <option value="$PROJECT_DIR$/css/goodslist.css" />
         <option value="$PROJECT_DIR$/view/goodslist.html" />
       </list>
     </option>
@@ -127,6 +139,34 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tree-demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tree-demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tree-demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tree-demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tree-demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -227,12 +267,12 @@
       <workItem from="1501034491037" duration="21964000" />
       <workItem from="1501086311806" duration="2000" />
       <workItem from="1501614720995" duration="162000" />
-      <workItem from="1503480237584" duration="20000" />
+      <workItem from="1503480237584" duration="1851000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22148000" />
+    <option name="totallyTimeSpent" value="23979000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
@@ -424,8 +464,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/activity-info.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        <state relative-caret-position="234">
+          <caret line="9" column="59" lean-forward="true" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
           <folding />
         </state>
       </provider>
@@ -440,12 +480,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/goodslist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="50" column="69" lean-forward="true" selection-start-line="50" selection-start-column="69" selection-end-line="50" selection-end-column="69" />
+        <state relative-caret-position="524">
+          <caret line="174" column="70" lean-forward="true" selection-start-line="174" selection-start-column="70" selection-end-line="174" selection-end-column="70" />
           <folding>
             <element signature="n#div#0;n#div#1;n#form#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#1;n#form#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/goodslist.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="101" column="1" lean-forward="true" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
