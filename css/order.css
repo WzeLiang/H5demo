@@ -9,6 +9,8 @@ p {
 }
 .order {
   background: #f3f3f3;
+  overflow:scroll;
+  -webkit-overflow:scroll;
 }
 .order .order-adress {
   margin-top: .25rem;
