@@ -1,0 +1,55 @@
+.row {
+  margin: 0;
+}
+a {
+  text-decoration: none!important;
+}
+p {
+  margin: 0;
+}
+.bill .bill-form .bill-top .input-item {
+  border-bottom: 1px solid #999999;
+  padding: .2rem;
+  font-size: .28rem;
+}
+.bill .bill-form .bill-top .input-item p {
+  display: inline-block;
+  width: 30%;
+}
+.bill .bill-form .bill-top .input-item input {
+  display: inline-block;
+  outline: none;
+  border: none;
+  width: 70%;
+}
+.bill .bill-form .bill-down {
+  margin-top: .3rem;
+  border-top: 1px solid #999999;
+}
+.bill .bill-form .bill-down .input-item {
+  border-bottom: 1px solid #999999;
+  padding: .2rem;
+  font-size: .28rem;
+}
+.bill .bill-form .bill-down .input-item p {
+  display: inline-block;
+  width: 30%;
+}
+.bill .bill-form .bill-down .input-item input {
+  display: inline-block;
+  outline: none;
+  border: none;
+  width: 70%;
+}
+.bill .bill-form .bill-btn {
+  margin-top: .3rem;
+  padding: 0 .3rem;
+}
+.bill .bill-form .bill-btn a {
+  display: block;
+  padding: .15rem;
+  color: white;
+  background: #ffb900;
+  font-size: .26rem;
+  border-radius: .1rem;
+}

@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="../js/config.js"></script>
+    <script src="../src/LAreaData2.js"></script>
+    <script src="../src/LArea.js"></script>
+ 	<script src="../src/jquery.min.js"></script>
+    <link rel="stylesheet" href="../src/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/LArea.min.css">
+    <link rel="stylesheet" href="../css/add-adress.css">
+    <title>添加收货地址</title>
+</head>
+<body class="add-adress">
+    <div class="adress-form">
+        <form action="">
+            <div class="form-username">
+                <p class="text-center">收货姓名</p><!--
+                --><input type="text" placeholder="请输入收获人姓名">
+            </div>
+            <div class="form-phone">
+                <p class="text-center">手机号码</p><!--
+                --><input type="number" placeholder="请输入手机号码">
+            </div>
+            <div class="form-code">
+                <p class="text-center">邮政编码</p><!--
+                --><input type="number" placeholder="请输入邮政编码">
+            </div>
+            <div class="form-adress">
+                <p class="text-center">所在地区</p><!--
+                --><input id="demo2" type="text" readonly="" placeholder="城市选择特效" />
+                <input id="value2" type="hidden" style="display: none" />
+            </div>
+            <div class="form-adressinfo">
+                <p class="text-center">详细地址</p><!--
+                --><textarea name="" id="" cols="30" rows="10" placeholder="请输入详细配送地址"></textarea>
+            </div>
+            <div class="form-btn text-center">
+                <a href="javascript:void(0)">保存</a>
+            </div>
+        </form>
+    </div>
+    <script>
+
+        var area2 = new LArea();
+        area2.init({
+            'trigger': '#demo2',
+            'valueTo': '#value2',
+            'keys': {
+                id: 'value',
+                name: 'text'
+            },
+            'type': 2,
+            'data': [provs_data, citys_data, dists_data]
+        });
+    </script>
+</body>
+</html>

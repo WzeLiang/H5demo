@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="../js/config.js"></script>
+   <script src="../src/jquery.min.js"></script>
+    <link rel="stylesheet" href="../src/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <title>搜索</title>
+</head>
+<body class="search">
+    <div class="head">
+        <div class="search-box">
+            <form class="text-center">
+                <input class="form-control" id="search-input" type="search" placeholder="你想要的装备都在这里">
+                <button type="button" id="search-btn">搜索</button>
+            </form>
+        </div>
+    </div>
+    <div class="search-history">
+        <p class="history-title">搜索历史</p>
+        <div class="history-list">
+            <p class="history-item">
+                <a href="#">高尔夫</a>
+            </p>
+            <p class="history-item">
+                <a href="#">高尔夫</a>
+            </p>
+            <p class="history-item">
+                <a href="#">高尔夫</a>
+            </p>
+        </div>
+        <div class="clear-history text-center">清空搜索记录</div>
+    </div>
+<script>
+    $(function () {
+        $("#search-input").focus(function () {
+            $(this).css("width","80%");
+            $("#search-btn").css("display","inline-block")
+        })
+        $(".search-box").blur(function () {
+            $(this).css("width","100%");
+            $("#search-btn").css("display","none")
+        })
+    })
+</script>
+<script>
+
+    $(document).delegate(".history-item","click",function(){
+        $("#search-input").val($(this).text());
+    });
+
+    /*搜索记录相关*/
+    //从localStorage获取搜索时间的数组
+    var hisTime;
+    //从localStorage获取搜索内容的数组
+    var hisItem;
+    //从localStorage获取最早的1个搜索时间
+    var firstKey;
+    function init (){
+//每次执行都把2个数组置空
+        hisTime = [];
+        hisItem = [];
+//模拟localStorage本来有的记录
+//localStorage.setItem("a",12333);
+//本函数内的两个for循环用到的变量
+        var i=0
+        for(;i<localStorage.length;i++){
+            if(!isNaN(localStorage.key(i))){
+                hisItem.push(localStorage.getItem(localStorage.key(i)));
+                hisTime.push(localStorage.key(i));
+            }
+        }
+        i=0;
+//执行init(),每次清空之前添加的节点
+        $(".history-list").html("");
+        for(;i<hisItem.length;i++){
+//alert(hisItem);
+            $(".history-list").prepend('<div class="history-item">'+hisItem[i]+'</div>')
+        }
+    }
+    init();
+
+    $("#search-btn").click(function(){
+        var value = $("#search-input").val();
+        var time = (new Date()).getTime();
+
+        if(!value){
+            alert("你未输入搜索内容");
+            return false;
+        }
+
+//输入的内容localStorage有记录
+        if($.inArray(value,hisItem)>=0){
+            for(var j = 0;j<localStorage.length;j++){
+                if(value==localStorage.getItem(localStorage.key(j))){
+                    localStorage.removeItem(localStorage.key(j));
+                }
+            }
+            localStorage.setItem(time,value);
+        }
+//输入的内容localStorage没有记录
+        else{
+//由于限制了只能有6条记录，所以这里进行判断
+            if(hisItem.length>4){
+                firstKey = hisTime[0]
+                localStorage.removeItem(firstKey);
+                localStorage.setItem(time,value);
+            }else{
+                localStorage.setItem(time,value)
+            }
+        }
+        init();
+//正式的时候要提交的！！！
+//$("#form1").submit()
+
+    });
+
+    //清除记录功能
+    $(".clear-history").click(function(){
+        var f = 0;
+        for(;f<hisTime.length;f++){
+            localStorage.removeItem(hisTime[f]);
+        }
+        init();
+    });
+    //苹果手机不兼容出现input无法取值以下是解决方法
+    $(function(){
+        $('.history-item').click(function(){
+            var div = $(this).text();
+            $('#search-input').val(div);
+        })
+//取到值以后button存储无法取值，这里强迫浏览器强行刷新可解决
+        $('#search-btn').click(function(){
+            window.location.reload();
+        })
+    })
+
+</script>
+</body>
+</html>

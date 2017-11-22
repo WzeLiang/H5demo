@@ -1,0 +1,98 @@
+.row {
+  margin: 0;
+}
+a {
+  text-decoration: none!important;
+}
+p {
+  margin: 0;
+}
+.add-adress .adress-form form .form-username {
+  border-bottom: 1px solid #999999;
+  padding: .2rem;
+  font-size: .28rem;
+}
+.add-adress .adress-form form .form-username p {
+  display: inline-block;
+  width: 25%;
+}
+.add-adress .adress-form form .form-username input {
+  display: inline-block;
+  outline: none;
+  border: none;
+  width: 75%;
+}
+.add-adress .adress-form form .form-phone {
+  border-bottom: 1px solid #999999;
+  padding: .2rem;
+  font-size: .28rem;
+}
+.add-adress .adress-form form .form-phone p {
+  display: inline-block;
+  width: 25%;
+}
+.add-adress .adress-form form .form-phone input {
+  display: inline-block;
+  outline: none;
+  border: none;
+  width: 75%;
+}
+.add-adress .adress-form form .form-code {
+  border-bottom: 1px solid #999999;
+  padding: .2rem;
+  font-size: .28rem;
+}
+.add-adress .adress-form form .form-code p {
+  display: inline-block;
+  width: 25%;
+}
+.add-adress .adress-form form .form-code input {
+  display: inline-block;
+  outline: none;
+  border: none;
+  width: 75%;
+}
+.add-adress .adress-form form .form-adress {
+  border-bottom: 1px solid #999999;
+  padding: .2rem;
+  font-size: .28rem;
+}
+.add-adress .adress-form form .form-adress p {
+  display: inline-block;
+  width: 25%;
+}
+.add-adress .adress-form form .form-adress input {
+  display: inline-block;
+  outline: none;
+  border: none;
+  width: 75%;
+}
+.add-adress .adress-form form .form-adressinfo {
+  border-bottom: 1px solid #999999;
+  padding: .2rem;
+  font-size: .28rem;
+}
+.add-adress .adress-form form .form-adressinfo p {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+}
+.add-adress .adress-form form .form-adressinfo textarea {
+  display: inline-block;
+  outline: none;
+  border: none;
+  width: 75%;
+  height: 2rem;
+}
+.add-adress .adress-form form .form-btn {
+  margin-top: .3rem;
+  padding: 0 .3rem;
+}
+.add-adress .adress-form form .form-btn a {
+  display: block;
+  padding: .15rem;
+  color: white;
+  background: #ffb900;
+  font-size: .26rem;
+  border-radius: .1rem;
+}

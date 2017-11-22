@@ -1,0 +1,39 @@
+.row {
+  margin: 0;
+}
+a {
+  text-decoration: none!important;
+}
+p {
+  margin: 0;
+}
+.order-finish .head {
+  padding: 1rem .35rem .7rem;
+}
+.order-finish .head .head-title {
+  margin-bottom: .5rem;
+  font-size: .4rem;
+}
+.order-finish .head .head-title img {
+  width: 1rem;
+}
+.order-finish .head .head-content {
+  text-indent: .3rem;
+  font-size: .25rem;
+  line-height: .4rem;
+}
+.order-finish .order-msg {
+  padding: 0 .6rem;
+  font-size: .32rem;
+}
+.order-finish .order-msg p {
+  margin-bottom: .15rem;
+}
+.order-finish .finish-btn {
+  margin: .6rem .6rem ;
+  padding: .2rem;
+  font-size: .3rem;
+  color: white;
+  background: #ffb900;
+  border-radius: .1rem;
+}

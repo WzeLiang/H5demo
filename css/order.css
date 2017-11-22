@@ -1,0 +1,138 @@
+.row {
+  margin: 0;
+}
+a {
+  text-decoration: none!important;
+}
+p {
+  margin: 0;
+}
+.order {
+  background: #f3f3f3;
+}
+.order .order-adress {
+  margin-top: .25rem;
+  padding: .2rem;
+  background: white;
+  font-size: .28rem;
+}
+.order .order-adress a {
+  display: block;
+  color: black;
+}
+.order .order-msg {
+  margin-top: .25rem;
+  background: white;
+}
+.order .order-msg .msg-goods {
+  padding: .2rem .25rem;
+  border-bottom: solid 1px #e0e0e0;
+}
+.order .order-msg .msg-goods .goods-img {
+  display: inline-block;
+}
+.order .order-msg .msg-goods .goods-img img {
+  width: 2rem;
+}
+.order .order-msg .msg-goods .goods-info {
+  width: 3.5rem;
+  vertical-align: middle;
+  display: inline-block;
+}
+.order .order-msg .msg-goods .goods-info .info-name {
+  font-size: .28rem;
+}
+.order .order-msg .msg-goods .goods-info .info-sku {
+  font-size: .25rem;
+  color: #999999;
+}
+.order .order-msg .msg-goods .goods-info .info-price {
+  color: red;
+  font-size: .3rem;
+}
+.order .order-msg .msg-goods .goods-number {
+  display: inline-block;
+  height: 100%;
+  font-size: .25rem;
+}
+.order .order-msg .msg-cheap {
+  padding: .2rem .25rem;
+  border-bottom: 1px #e0e0e0 solid;
+}
+.order .order-msg .msg-cheap .cheap-text {
+  font-size: .28rem;
+}
+.order .order-msg .msg-cheap .cheap-content {
+  padding: .1rem 0 0 0;
+  font-size: .27rem;
+}
+.order .order-msg .msg-cheap .cheap-content span {
+  display: inline-block;
+  padding: .05rem .1rem ;
+  background: #ffb900;
+  color: white;
+}
+.order .order-msg .msg-way {
+  padding: .2rem .25rem;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: .25rem;
+}
+.order .order-msg .msg-points {
+  padding: .2rem .25rem;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: .255rem;
+}
+.order .order-msg .msg-points .pull-left {
+  color: #999999;
+}
+.order .order-msg .msg-price {
+  padding: .2rem .25rem;
+  font-size: .25rem;
+}
+.order .order-remarks {
+  margin-top: .25rem;
+  background: white;
+}
+.order .order-remarks .remarks-comment {
+  padding: .2rem .25rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+.order .order-remarks .remarks-comment a {
+  font-size: .25rem;
+  display: block;
+  color: black;
+}
+.order .order-remarks .remarks-bill {
+  padding: .2rem .25rem;
+}
+.order .order-remarks .remarks-bill a {
+  font-size: .25rem;
+  display: block;
+  color: black;
+}
+.order .order-btn {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+.order .order-btn .btn-price {
+  display: inline-block;
+  padding: .2rem 0;
+  width: 65%;
+  background: white;
+  color: black;
+  font-size: .3rem;
+}
+.order .order-btn .btn-pay {
+  width: 35%;
+  background: #ffb900;
+  padding: .2rem 0;
+  display: inline-block;
+  font-size: .3rem;
+}
+.order .order-btn .btn-pay a {
+  display: block;
+  color: white;
+}

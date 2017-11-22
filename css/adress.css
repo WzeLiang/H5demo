@@ -1,0 +1,52 @@
+.row {
+  margin: 0;
+}
+a {
+  text-decoration: none!important;
+}
+p {
+  margin: 0;
+}
+.adress {
+  background: #f3f3f3;
+  padding: .2rem;
+}
+.adress .adress-add a {
+  background: white;
+  display: block;
+  border: dashed 1px #999999;
+  color: black;
+  border-radius: .05rem;
+  padding: .2rem 0;
+}
+.adress .adress-list .adress-item {
+  background: white;
+  margin-top: .2rem;
+  border: #999999;
+  padding: 0 .2rem;
+}
+.adress .adress-list .adress-item .item-msg {
+  border-bottom: 1px solid #999999;
+}
+.adress .adress-list .adress-item .item-msg .msg-user {
+  padding: .12rem 0;
+}
+.adress .adress-list .adress-item .item-msg .msg-adress {
+  padding: .12rem 0;
+}
+.adress .adress-list .adress-item .item-operate {
+  padding: .2rem 0;
+}
+.adress .adress-list .adress-item .item-operate div .update-adress {
+  color: black;
+  display: inline-block;
+  padding: .05rem;
+  border: solid 1px #999999;
+}
+.adress .adress-list .adress-item .item-operate div .dele-adress {
+  color: black;
+  display: inline-block;
+  padding: .05rem;
+  border: solid 1px #999999;
+  margin-left: .2rem;
+}
